@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kings Resort and Cove | Reservation</title>
+  <meta name="description" content="Kings Resort and Cove offers refined island stays, private villas, and a luxury booking experience. Reserve your escape today.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="topbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Kings Resort and Cove home">
+        <span class="brand-mark">KR</span>
+        <span class="brand-text">
+          <span class="brand-name">KINGS RESORT</span>
+          <span class="brand-sub">AND COVE</span>
+        </span>
+      </a>
+
+      <div class="nav-links" aria-label="Navigation links">
+        <a href="#stay">Stay</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#booking">Booking</a>
+      </div>
+    </nav>
+
+    <section class="hero container" aria-label="Luxury resort landing section">
+      <div class="hero-copy">
+        <p class="eyebrow">Your private island escape</p>
+        <h1>Find your little piece of paradise.</h1>
+        <p class="lead">Slow mornings, salt-kissed afternoons, and a little more room to breathe at Kings Resort and Cove.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="primary-btn">Plan your stay</a>
+          <a href="#rooms" class="secondary-btn">Explore rooms</a>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span>09° 32' N</span>
+          <strong>Siquijor, Philippines</strong>
+        </div>
+        <div class="meta-item">
+          <span>Luxury stays</span>
+          <strong>Beachfront villas & suites</strong>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="feature-strip container" id="stay" aria-label="Resort highlights">
+      <article>
+        <span>01</span>
+        <h2>Slow living</h2>
+        <p>Thoughtfully made spaces designed for unwinding.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h2>Oceanfront</h2>
+        <p>Wake to wide, blue horizons and private coastal views.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h2>Curated comfort</h2>
+        <p>Personalized service, premium amenities, effortless ease.</p>
+      </article>
+    </section>
+
+    <section class="rooms container" id="rooms" aria-label="Rooms and suites">
+      <div class="section-intro">
+        <p class="eyebrow subtle">Stay a little closer to nature</p>
+        <h2>Choose the rhythm of your escape.</h2>
+      </div>
+
+      <div class="room-grid">
+        <article class="room-card room-card-1">
+          <div class="room-badge">Signature stay</div>
+          <h3>Ocean View Villa</h3>
+          <p>Private terrace · Sleeps 2–4</p>
+        </article>
+
+        <article class="room-card room-card-2">
+          <div class="room-badge">A little more room</div>
+          <h3>Deluxe Suite</h3>
+          <p>Garden outlook · Sleeps 2–3</p>
+        </article>
+
+        <article class="room-card room-card-3">
+          <div class="room-badge">Room for everyone</div>
+          <h3>Family Suite</h3>
+          <p>Two bedrooms · Sleeps 4–6</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking-area" id="booking">
+      <div class="booking-shell container">
+        <div class="booking-copy">
+          <p class="eyebrow subtle">Your escape starts here</p>
+          <h2>A few details. Then the daydreaming.</h2>
+          <p>Tell us what you’re looking for and we’ll help you plan the perfect secluded getaway.</p>
+        </div>
+
+        <form id="booking-form" novalidate>
+          <div class="form-header">Plan your stay</div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="fullName">Full name<span class="required">*</span></label>
+              <input id="fullName" name="fullName" type="text" required placeholder="Your full name">
+            </div>
+
+            <div class="field">
+              <label for="email">Email address<span class="required">*</span></label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number<span class="required">*</span></label>
+              <input id="phone" name="phone" type="tel" required placeholder="+63 912 345 6789">
+            </div>
+
+            <div class="field">
+              <label for="roomType">Room selection<span class="required">*</span></label>
+              <select id="roomType" name="roomType" required>
+                <option value="" selected>Select your stay</option>
+                <option>Ocean View Villa</option>
+                <option>Deluxe Suite</option>
+                <option>Standard Room</option>
+                <option>Family Suite</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="checkIn">Check-in<span class="required">*</span></label>
+              <input id="checkIn" name="checkIn" type="date" required>
+            </div>
+
+            <div class="field">
+              <label for="checkOut">Check-out<span class="required">*</span></label>
+              <input id="checkOut" name="checkOut" type="date" required>
+            </div>
+
+            <div class="field">
+              <label for="adults">Adults<span class="required">*</span></label>
+              <select id="adults" name="adults" required>
+                <option selected>1 adult</option>
+                <option>2 adults</option>
+                <option>3 adults</option>
+                <option>4 adults</option>
+                <option>5 adults</option>
+                <option>6 adults</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="children">Children</label>
+              <select id="children" name="children">
+                <option selected>No children</option>
+                <option>1 child</option>
+                <option>2 children</option>
+                <option>3 children</option>
+                <option>4 children</option>
+              </select>
+            </div>
+
+            <div class="field field-full">
+              <label for="specialRequests">Special requests (optional)</label>
+              <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Anything that would make your stay extra special?"></textarea>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <p>We’ll be in touch to confirm availability.</p>
+            <div class="button-row">
+              <button type="submit" id="submitBtn">Check availability</button>
+              <button type="button" id="bookNow" class="secondary">Book Now</button>
+            </div>
+          </div>
+
+          <div id="formMessage" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <a href="#home" class="footer-brand" aria-label="Kings Resort and Cove home">
+        <span class="brand-mark footer-mark">KR</span>
+        <span class="brand-text">
+          <span class="brand-name">KINGS RESORT</span>
+          <span class="brand-sub">AND COVE</span>
+        </span>
+      </a>
+      <p>A little island. A lot of room to breathe.</p>
+      <a href="#booking" class="footer-link">Come find us</a>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <h3 id="modalTitle">Reservation Submitted</h3>
+      <p id="modalBody">Thank you — your request was received at Kings Resort and Cove. We will contact you to confirm availability.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
